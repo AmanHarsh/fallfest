@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BEINGARTIFEX</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.5.1.js"
+	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f39881781b2dd0012226b3d&product=inline-share-buttons" async="async"></script>
+	<link rel="icon" href="/images/logo.png" type="image/png"></head></head>
+<body>
+	<div id="navbarBase">
+		<div id="navbarContainer">
+			<nav class="navbar navbar-expand-md navbar-dark">
+			    <div class=" w-100 order-1 order-md-0 ">
+			        <ul class="navbar-nav mr-auto">
+			        	<li class="nav-item active">
+							<!-- <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true" ></i></a> -->
+							<a class="nav-link" href="/home"> <img src="/images/logo.png"></a>
+						</li>
+						<a href="/home">
+							<li class="homeText nav-item ">
+								BEINGARTIFEX
+							</li>
+						</a>
+			        	<div class="navbar-nav ml-auto">
+			    			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    						<span class="navbar-toggler-icon"></span>
+  							</button>
+
+			    		</div>            
+			           
+			        </ul>
+			    </div>
+			    
+			    <div class="dual-collapse2 collapse navbar-collapse w-100 order-3 ">
+			        <ul class="list1 navbar-nav ml-auto">
+			            <li class="nav-item">
+			            	<div id="search">
+			            		<div>
+			            			<input type="text" placeholder="Search" class="toggleDisplay">
+			            		</div>
+			            		<!-- <div>
+			            			<a href="#">
+										<i class="correctPosition fa fa-search" aria-hidden="true"></i>
+									</a>
+			            		</div> -->
+								
+								
+							</div>
+			                
+			            </li>
+			            
+			            <li class="rightNav nav-item">
+			                <a class="nav-link" href="/contact">Contact Us</a>
+			            </li>
+			            <li class="rightNav nav-item">
+			                <a class="nav-link" href="/explore">Explore</a>
+			            </li>
+			            <li class="rightNav nav-item">
+			            	<a class="nav-link" href="#">
+			            		<div class="dropdown">
+								  <button class="dropbtn">Support Us</button>
+								  <div class="dropdown-content">
+								    <a href="https://rzp.io/l/Kd8iCaY" class="link">Donate</a>
+								    <div class="sharethis-inline-share-buttons"></div>								    
+								  </div>
+								</div>
+
+			            	</a>
+
+			            	
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+		</div>
+	</div>
+	<div id="container">
+		<div id="clickedContent" class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="image">
+				<div id="imageContainer">
+					<img src="<%=img%>" id="img2">
+					<div id="imgTag">
+						<!-- <h4>BY ALOK KUMAR</h4> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="content">
+				<div id="innerContent" class="row">
+					<div id="info">
+						<p><%=name%></p>	
+					</div>
+					<div id="filesAttached" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h4>Files Attached</h4>
+						<hr>
+					</div>
+					<div id="subOptions" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="subOptions1">
+							<a href="<%=doc1%>"><h4><%=file1%></h4></a>
+						</div>
+						<div class="subOptions1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a href="<%=doc2%>"><h4><%=file2%></h4></a>
+						</div>
+
+						
+						
+					
+					<% if(y==2){%>
+						
+						<div class="subOptions1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a href="<%=doc3%>"><h4><%=file3%></h4></a>
+						</div>
+					<%}%>
+					</div>
+					<div id="imageTag" class="death">
+						<div class="explained comment">
+							<a href="javascript:void(Tawk_API.toggle())"><div><i class="fa fa-male bulbImage" aria-hidden="true"></i> &nbsp Hire Us  </div></a>
+							
+							
+						</div>
+						
+						<div class="how comment">
+							<a href="javascript:void(Tawk_API.toggle())"><div><i class="fa fa-question howImage" aria-hidden="true howImage"></i> &nbsp Ask Us</div></a>
+							
+
+						</div>
+
+
+					</div>
+				</div>
+				
+			</div>
+			
+
+		</div>
+
+		<div id="moreOptions">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="moreText">
+					<h4>Similar FEED To Explore!</h4>
+					<hr>
+				</div>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+<a href="<%=url2%>"><img src="<%=img2%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+
+
+					</div>
+
+				</div>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="<%=url3%>"><img src="<%=img3%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+                    
+
+					</div>
+				</div>
+				<%if(a==1){%>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="<%=url4%>"><img src="<%=img4%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+
+
+					</div>
+
+				</div>
+			<%}%>
+        
+			<%if(b==1){%>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="<%=url5%>"><img src="<%=img5%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+                        
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+                        
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+
+
+					</div>
+
+				</div>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="<%=url6%>"><img src="<%=img6%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+
+
+					</div>
+
+				</div>
+				<div class="image1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="<%=url7%>"><img src="<%=img7%>"></a>
+					<div class="imageTag1">
+						<!-- <div class="explained1 comment1">
+							<div><i class="fa fa-lightbulb-o bulbImage" aria-hidden="true"></i>   <span class="bulbText">0</span></div>
+							<div>EXPLAINED!</div>
+
+						</div>
+						<div class="like1 comment1">
+							<div><i class="fa fa-thumbs-up likeImage" aria-hidden="true"></i>   <span class="likeText">0</span></div>
+							<div>LIKE</div>
+
+							</div>
+						<div class="how1 comment1">
+							<div><i class="fa fa-question howImage" aria-hidden="true howImage"></i>   <span class="howText">0</span></div>
+							<div>HOW</div>
+
+						</div> -->
+
+
+					</div>
+
+				</div>
+			<%}%>
+				
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!--Start of Tawk.to Script-->
+	
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f384acf4c7806354da6ad50/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--></body>
+<script type="text/javascript" src="/js/post.js"></script>
+</html>

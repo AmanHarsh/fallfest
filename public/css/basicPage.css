@@ -1,0 +1,163 @@
+body{
+	background-image: url(styling/BACKGROUND.png);
+	margin:0;
+	padding:0;
+}
+#navbarBase{
+	width: 100%;
+	background-color: #001316;
+	margin: 0;
+	padding: 0;
+}
+#navbarContainer{
+	width:80%;
+	margin:0px auto;
+}
+.navbar-toggler{
+	border:2px solid red;
+}
+
+.navbar-nav{
+	flex-direction:row;
+}
+.list1{
+	flex-direction:column;
+}
+.navbar{
+	padding: 0;
+}
+.nav-item{
+	color:white;
+	font-size: 1.1em;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 0.3em;
+}
+.homeText{
+	font-size: 1.4em;
+	padding-left: 0.5em;
+}
+.fa-home{
+	font-size: 1.7em;
+}
+
+#search input{
+	height: 60%;
+	width: 100%;
+}
+#search i{
+	margin-left: 5%;
+	width:100%;
+}
+#search{
+	margin-top: 2.5%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color:white;
+	font-size: 0.78em;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+nav	i{
+	text-align: center;
+	padding-top: 2%;
+}
+#container{
+	width:80%;
+	margin:5em auto;
+	/*max-width: 900px;*/
+}
+#search div:nth-of-type(1){
+	width:60%; 
+
+}
+#search div:nth-of-type(2){
+	width:40%;
+}
+#search div{
+	float:left;
+
+}
+
+.toggleDisplay{
+	display: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #001316;
+  color: white;
+  border: none;
+  position: relative;
+  bottom:1.3em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #001316;
+	padding: 0.5em 1em;
+}
+.fa-home{
+	font-size: 3em;
+}
+.nav-link .fa-home{
+	padding: 6% 0.5em;
+
+
+}
+.nav-link .homeText{
+	padding:0; 
+}
+
+.nav-item{
+	padding:0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: #1de9b6;
+	transition-duration: 250ms;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {}
+.homeText{
+	height: 80%;
+	padding: 1.5% 0;
+	position: relative;
+	top: 0.35em;
+}
+
+.rightNav{
+	position: relative;
+	top:0.4em;
+}
+
+.correctPosition{
+	position: relative;
+	top:1em;
+}
+
+.correctPosition2{
+	position: relative;
+	top: 0.4em;
+}
+.dropdown-content .nav-link{
+	display:none;
+}

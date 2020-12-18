@@ -1,0 +1,349 @@
+body{
+	background-image:url(/images/styling/BACKGROUND.png);
+	margin:0;
+	padding:0;
+
+}
+
+#navbarBase{
+	width: 100%;
+	background-color: #001316;
+	margin: 0;
+	padding: 0;
+}
+
+#navbarContainer{
+	width:80%;
+	margin:0px auto;
+}
+
+.navbar-toggler{
+	border:2px solid red;
+}
+
+
+.navbar-nav{
+	flex-direction:row;
+}
+.list1{
+	flex-direction:column;
+}
+.navbar{
+	padding: 0;
+}
+.nav-item{
+	color:white;
+	font-size: 1.1em;
+	
+	padding-top: 0.3em;
+}
+.homeText{
+	font-size: 1.4em;
+	padding-left: 0.5em;
+}
+.fa-home{
+	font-size: 1.7em;
+}
+
+#search input{
+	height: 60%;
+	width: 100%;
+}
+#search i{
+	margin-left: 5%;
+	width:100%;
+}
+#search{
+	margin-top: 2.5%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color:white;
+	font-size: 0.78em;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+nav	i{
+	text-align: center;
+	padding-top: 2%;
+}
+#container{
+	width:80%;
+	margin:5em auto;
+	/*max-width: 900px;*/
+}
+#search div:nth-of-type(1){
+	width:60%; 
+
+}
+#search div:nth-of-type(2){
+	width:40%;
+}
+#search div{
+	float:left;
+
+}
+
+.toggleDisplay{
+	display: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color:#001316;
+  color: white;
+  border: none;
+  position: relative;
+  bottom:1.3em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #001316;
+	padding: 0.5em 1em;
+}
+.fa-home{
+	font-size: 3em;
+}
+.nav-link .fa-home{
+	padding: 6% 0.5em;
+
+
+}
+.nav-link .homeText{
+	padding:0; 
+}
+
+.nav-item{
+	padding:0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: #1de9b6;
+	transition-duration: 250ms;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.homeText{
+	height: 80%;
+	padding: 1.5% 0;
+	position: relative;
+	top: 0.35em;
+}
+
+.rightNav{
+	position: relative;
+	top:0.4em;
+
+}
+.correctPosition{
+	position: relative;
+	top:1em;
+}
+.correctPosition2{
+	position: relative;
+	top: 0.4em;
+
+}
+.row{
+	margin:0;
+	width: 100%;
+}
+#webDevelopment{
+	padding: 1% 2.5%;
+	width: 100%;
+	background-color:#1de9b6;
+	font-family: 'Open Sans',serif, sans-serif;
+	font-weight: 600;
+	color: #001316;
+}
+#guides{
+	background-color: #001316f0;
+	width:100%;
+	margin: 7% 0%;
+}
+
+#ideas{
+	background-color: #001316f0;
+	width:100%;
+	margin: 7% 0%;
+}
+
+.head1{
+	margin:2.5%;
+	width: 100%;
+	height: 2em;
+	text-align: center;
+	padding-bottom: 2.5%;
+	margin-bottom: 6em;
+}
+
+.head1 h4{
+	font-size: 3em;
+	color: white;
+	font-family: 'Open Sans',serif, sans-serif;
+	font-weight: 600;
+	font-size: 2.5em;
+	text-align: left
+}
+
+hr{
+	width: 50%;
+	background-color: #1de9b6;
+	height: 0.1em;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+	margin: 0;
+}
+
+.image{
+	width: 30%;
+	height: 15em;
+	position: relative;
+	margin: 2.5% 0%;
+	padding: 0;
+}
+.image img{
+	margin: 0% 5%;
+	width: 90%;
+	height: 100%;
+}
+.imageTag{
+	margin: 0% 5%;
+	width: 90%;	
+	background-color:white;
+	opacity: 0.6;
+	text-align: center;
+	position: relative;
+	left: 1.85em;
+	bottom: 0;
+}
+.imageTag div{
+	
+	text-align: center;
+	margin-left:0%;
+	height: 50%;
+	padding: auto;
+}
+.comment{
+	
+	float: left;
+	
+}
+.comment i{
+	font-size: 2em;
+}
+.explained{
+	width: 40%;
+}
+.like{
+	width: 30%;
+}
+.how{
+	width: 30%;
+}
+.pencil{
+	position: absolute;
+	top: 0;
+	right: 5%;
+	font-size: 2em;
+	color: black;
+}
+.delete{
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	font-size: 2em;
+	color:black;
+}
+.pencil:hover{
+	color:white;
+	background-color: black;
+}
+.delete:hover{
+	color:white;
+	background-color: black;
+}
+.files{
+	position: absolute;
+	bottom: 50%;
+	right: 5%;
+	background-color: black;
+	border-radius: 35% 0% 0% 35%;
+}
+.files:hover{
+	background-color: white;
+	color:black;
+}
+.files i{
+	letter-spacing: 1em;
+}
+.files h4{
+	font-size: 1em;
+	text-align: center;
+	padding-left:1em;
+	padding-top: 0.4em; 
+}
+.faq{
+	position: absolute;
+	bottom: 30%;
+	right: 5%;
+	background-color: black;
+	border-radius: 35% 0% 0% 35%;
+}
+.faq:hover{
+	background-color: white;
+	color:black;
+}
+.faq i{
+	letter-spacing: 1em;
+}
+.faq h4{
+	font-size: 1em;
+	text-align: center;
+	padding-left:1em;
+	padding-top: 0.4em; 
+}
+
+#guides .row .image img {
+	margin-top: -18%;
+	margin-left: 16%;
+}
+
+#ideas .row .image img {
+	margin-top: -18%;
+}
+	
+
+a:hover{
+	text-decoration: none;
+}
+
+.homeText{
+	margin-top: 2.5%;
+	margin-left: 8%;
+}
+
+
+/* #navbarBase {
+	position: fixed;
+	margin-top: -5.8%;
+	box-shadow: 0px 0px 20px #000000f0;
+} */

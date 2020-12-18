@@ -1,0 +1,425 @@
+body{
+	background-image: url(/images/styling/BACKGROUND.png);
+	margin:0;
+	padding:0;
+
+
+}
+#navbarBase{
+	width: 100%;
+	background-color:#001316;
+	margin: 0;
+	padding: 0;
+}
+#navbarContainer{
+	width:80%;
+	margin:0px auto;
+}
+.navbar-toggler{
+	border:2px solid red;
+}
+.navbar-nav{
+	flex-direction:row;
+}
+.list1{
+	flex-direction:column;
+}
+.navbar{
+	padding: 0;
+}
+.nav-item{
+	color:white;
+	font-size: 1.1em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-top: 0.3em;
+}
+.homeText{
+	font-size: 1.4em;
+	padding-left: 0.5em;
+}
+.fa-home{
+	font-size: 1.7em;
+}
+
+#search input{
+	height: 60%;
+	width: 100%;
+}
+#search i{
+	margin-left: 5%;
+	width:100%;
+}
+#search{
+	margin-top: 2.5%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color:white;
+	font-size: 0.78em;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+nav	i{
+	text-align: center;
+	padding-top: 2%;
+}
+
+
+.toggleFont{
+	font-size: 2.5em;
+}
+
+
+
+#container{
+	width:80%;
+	margin:5em auto;
+	/*max-width: 900px;*/
+}
+#search div:nth-of-type(1){
+	width:60%; 
+
+}
+#search div:nth-of-type(2){
+	width:40%;
+}
+#search div{
+	float:left;
+
+}
+
+.toggleDisplay{
+	display: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #001316;
+  color: white;
+  border: none;
+  position: relative;
+  bottom:1.3em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #001316;
+	padding: 0.5em 1em;
+  
+}
+.fa-home{
+	font-size: 3em;
+}
+.nav-link .fa-home{
+	padding: 6% 0.5em;
+
+
+}
+.nav-link .homeText{
+	padding:0; 
+}
+
+.nav-item{
+	padding:0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color:white;
+  
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color:#1de9b6;
+	transition-duration: 250ms;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+.homeText{
+	height: 80%;
+	padding: 1.5% 0;
+	position: relative;
+	top: 0.35em;
+}
+
+.rightNav{
+	position: relative;
+	top:0.4em;
+
+}
+.correctPosition{
+	position: relative;
+	top:1em;
+}
+.correctPosition2{
+	position: relative;
+	top: 0.4em;
+
+}
+#imageshow {
+
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  padding:0;
+  background-color: #001316f1;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  height:600px;
+}
+
+#imageshow > div {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+   
+}
+
+#imageshow div img{
+	margin:0;
+	width:100%;
+	height:85%;
+
+}
+#content{
+	width:100%;
+	padding:0;
+	margin: 0;
+}
+
+
+hr{
+	width:41.5%;
+	margin:0;
+	height: 0.15em;
+	background-color: #1de9b6d0;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.102);
+
+
+}
+
+.div{
+	margin:50px 0px;
+	background-color: #001316f1;
+	height:40em;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.414);
+}
+
+
+.div hr{
+	margin:10px 0px 0px 5%;
+	padding:0;
+	
+
+}
+.heading{
+	width:100%;
+	height: 15%;
+	
+}
+.heading h3{
+	font-family: 'Open Sans',serif, sans-serif;
+	font-weight: 600;
+	margin:0;
+	padding: 2.5% 0 0 5%;
+	font-size: 2em;
+	color:white;
+	position: relative;
+	left: 0.4em;
+}
+
+.innerContent{
+	width:90%;
+	height:85%;
+	
+	margin:0 auto;
+	overflow: auto;
+}
+.innerContent .row{
+	width:100%;
+	height:100%;
+
+}
+.innerBox{
+	height:35%;
+}
+
+.subDiv{
+	float:left;
+	width:100%;
+	height:98%;
+	position: relative;
+	top:0px;
+	left:0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3); 
+	padding: 0;
+	
+	
+
+}
+.innerContent .row1{
+	
+	height: 50%;
+}
+
+
+.innerPart{
+	
+	height:100%;
+	padding: 2.5%;
+}
+img{
+	
+	width:100%;
+	height: 100%;
+
+}
+.subDiv img{
+	margin:auto 0px;
+}
+
+
+.imageTag{
+	width:100%;
+	height: 30%;
+	background-color: #001316;
+	opacity: 0.7;
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	text-align: center;
+	font-size: 0.68em;
+
+}
+.comment{
+	float:left;
+	height:100%;
+	
+	margin:0 1.66%;
+	padding-top: 5em;
+}
+.comment i{
+	font-size: 2em;
+}
+.explained{
+	width:40%;
+}
+.like{
+	width: 25%;
+}
+.how{
+	width:25%;
+}
+
+.imageTag div  {
+	padding-top: 3%;
+	font-weight: 800;
+	
+	color:white;
+}
+.displayButton{
+	position: absolute;
+	bottom:0px;	
+	height:15%;
+	width:100%;
+	color:#1de9b6;
+	font-size: 1em;
+	margin-left: 2em;
+
+	
+}
+.displayButton i{
+	width:5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 1.5%;
+	text-align: center;
+}
+.forMore h4{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+	padding: 0 5%;
+	margin-top: 35%;
+
+
+}
+
+.forMore{
+	width: 100%;
+	height:100%;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	border:none;
+
+
+}
+.forMore i{
+	margin-left: 40%;
+	font-size: 2em;
+}
+
+
+
+a:hover{
+	text-decoration: none;
+}
+
+.homeText{
+	margin-top: 2.5%;
+	margin-left: 8%;
+	margin-bottom: 10%;
+}
+
+.active{
+	margin-bottom: 2%;
+}
+
+.subDiv{
+	background-color: #1de9b6;
+}
+
+.subDiv h4, i {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 0px 0px 10px #00131650;
+}
+
+.innerPart .subDiv h4{
+	color: white;
+	margin-top: 25%;
+} 
+
+.subDiv i{
+	color: white;
+	padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+/* #navbarBase {
+	position: fixed;
+	margin-top: -5.8%;
+	box-shadow: 0px 0px 20px #000000f0;
+} */
