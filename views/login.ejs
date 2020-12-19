@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+
+    <html>
+    <head>
+    	<title></title>
+    	<script
+    	  src="https://code.jquery.com/jquery-3.5.1.js"
+    	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    	  crossorigin="anonymous"></script>
+
+
+          <link rel="stylesheet" type="text/css" href="/css/ArtifexStyle.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    	<!-- JS, Popper.js, and jQuery -->
+    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="/css/basicPage.css">
+    </head>
+    <body>
+    	<div id="navbarBase">
+    		<div id="navbarContainer">
+    			<nav class="navbar navbar-expand-md navbar-dark">
+    			    <div class=" w-100 order-1 order-md-0 ">
+    			        <ul class="navbar-nav mr-auto">
+    			        	<li class="nav-item active">
+    			                <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true" ></i></a>
+    			            </li>
+    			            <li class="homeText nav-item ">
+    			                BEINGARTIFEX
+    			            </li>
+    			        	<div class="navbar-nav ml-auto">
+    			    			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        						<span class="navbar-toggler-icon"></span>
+      							</button>
+
+    			    		</div>
+
+    			        </ul>
+    			    </div>
+
+    			    <div class="dual-collapse2 collapse navbar-collapse w-100 order-3 ">
+    			        <ul class="list1 navbar-nav ml-auto">
+    			            <!-- <li class="nav-item">
+    			            	<div id="search">
+    			            		<div>
+    			            			<input type="text" placeholder="Search" class="toggleDisplay">
+    			            		</div>
+    			            		<div>
+    			            			<a href="#">
+    										<i class="correctPosition fa fa-search" aria-hidden="true"></i>
+    									</a>
+    			            		</div>
+
+
+    							</div>
+
+    			            </li> -->
+    			            <li class="rightNav nav-item">
+    			                <a class="nav-link" href="/contact">Contact US</a>
+    			            </li>
+    			            <li class="rightNav nav-item">
+    			                <a class="nav-link" href="/explore">Explore</a>
+                            </li>
+                            <li class="rightNav nav-item">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                            <li class="rightNav nav-item">
+                                <a class="nav-link" href="/register">Sign Up</a>
+                            </li>
+    			            <li class="rightNav nav-item">
+    			            	<a class="nav-link" href="#">
+    			            		<div class="dropdown">
+    								  <button class="dropbtn">Support Us</button>
+    								  <div class="dropdown-content">
+    								    <a href="https://rzp.io/l/Kd8iCaY" class="link">Donate</a>
+    								    <a href="#" class="link">Share</a>
+    								  </div>
+    								</div>
+
+    			            	</a>
+
+
+    			            </li>
+    			        </ul>
+    			    </div>
+    			</nav>
+    		</div>
+    	</div>
+    	<div id="container">
+
+    	</div>
+<div class="box">
+<h2 class="pos">LOG IN</h2>
+              <form action="/login" method="POST">
+                    <div class="form_input">
+
+					<div >
+					<img src="/images/user.png" class="img"></div><br>
+					<i class="fa fa-user"  id="logo"></i>
+                         <input type="text" name="username" placeholder="USER NAME" ><br>
+						 <i class="fa fa-lock"  id="logo"></i>
+						 <input type="password" name="password" placeholder="PASSWORD" ><br>
+						 <h3 ><a href="/register">SIGN UP FIRST!</a>
+						 </h3>
+
+                    </div>
+					<input class="sub" type="submit" value="Log IN"  name="submit">
+              </form>
+</div>
+</body>
+  <script type="text/javascript" src="/js/basicPage.js"></script>
+</html>

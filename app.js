@@ -2,20 +2,40 @@ var       express                      =           require("express"),
           bodyParser                   =           require("body-parser"),
           app                          =           express(),
           methodOverride               =           require("method-override"),         
-          x                            =           ""
-
+          x                            =           "",
+          mongoose= require("mongoose"),
+          passport=require("passport"),
+         localStrategy= require("passport-local"),
+         passportLocalMongoose=require("passport-local-mongoose"),
+         ConnectDB = require("./models/mongo");
 
  app.use(express.static("public"))         
  app.use(methodOverride("_method"))
  app.use(bodyParser.urlencoded({extended:true}))   
+ mongoose.connect("mongodb+srv://infinitysworst:ganda@cluster0.d7vbn.mongodb.net/<dbname>?retryWrites=true&w=majority")
+ ConnectDB()
+ var userSchema= new mongoose.Schema({
+  username: String, 
+  password: String
+})
+userSchema.plugin(passportLocalMongoose)
+var User=mongoose.model("User", userSchema)
 
+//dgdfgdfg
 
+app.use(passport.initialize())
+app.use(passport.session())
 app.use(require("express-session")({
     secret: "madharchod",
     resave: false,
     saveUninitialized: false
-
 }))
+passport.use(new localStrategy(User.authenticate()))
+passport.serializeUser(User.serializeUser())
+passport.deserializeUser(User.deserializeUser())
+
+
+//ssdsdfs
 
 //home
 app.get("/", function(req, res){
@@ -831,10 +851,49 @@ app.get("/explore/cc/:photo", function(req, res){
      }
           
   })
+
+
+  app.post("/register" ,function(req,res){
+    User.register(new User({username: req.body.username}), req.body.password, function(err, user){
+        if(err){
+            console.log(err)
+           return res.render("register.ejs")
+        }       
+            passport.authenticate("local")(req,res,function(){
+                res.redirect("/explore")
+            })
+        
+    })
+    
+})
+
+
+app.post("/login",passport.authenticate("local", {
+  successRedirect: "/explore",
+  failureRedirect: "/login"
+}), function(req,res){
+
+})
    
 
- app.listen(3000, function(){ 
-
-    console.log("server started")
-      
+app.get("/logout", function(req,res){
+  req.logout()
+  res.redirect('/')
 })
+
+
+app.get("/login", function(req,res){
+  res.render("login.ejs")
+})
+
+
+
+app.get("/register", function(req, res){
+  res.render("register.ejs")
+})
+
+const PORT = process.envPORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Our app is running on port ${ PORT }`);
+});
