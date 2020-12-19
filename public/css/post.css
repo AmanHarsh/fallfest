@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap');
 body{
 	background-image: url(/images/styling/BACKGROUND.png);
 	margin:0;
@@ -446,7 +447,13 @@ a:hover{
 }
 
 
+@media (max-width:1100px){
 
+	#content{
+		display: block;
+		margin: -200px -80px 0px 25px;
+	}
+}
 
 
 
